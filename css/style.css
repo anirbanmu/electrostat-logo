@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+html, body {
+  margin: 0;
+  background: #15151E;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+#logo {
+  transition: all 500ms;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: 1s;
+  font-size: 52px;
+  font-family: 'Orbitron', sans-serif;
+  will-change: transform;
+  color: #15151E;
+}
+
+#blip {
+  width: 552px;
+  height: 2px;
+  background: #15151E;
+  will-change: transform;
+  transition: all 500ms;
+  animation-name: blip-animation;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes example {
+  0% {
+    transform: scale(8, 1);
+    letter-spacing: 20em;
+    color: #15151E;
+  }
+  50% {
+    transform: scale(1, 1);
+    letter-spacing: 4px;
+  }
+  67% {
+    color: #FA1E00;
+    transform: scale(1, 1);
+  }
+  70% {
+    transform: scale(1.05, 1.05);
+  }
+  76% {
+    transform: scale(1, 1);
+  }
+  78% {
+    transform: scale(1, 1);
+  }
+  80% {
+    transform: scale(1, 1);
+  }
+  90% {
+    transform: scale(1, 1);
+    letter-spacing: 4px;
+    color: #FA1E00;
+    opacity: 1;
+  }
+  95% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0.2, 0.2);
+    letter-spacing: 4px;
+    color: #15151E;
+    opacity: 0;
+  }
+}
+@keyframes blip-animation {
+  0% {
+    transform: translate(-100vh, 0);
+    background-color: #15151E;
+  }
+  50% {
+    transform: translate(-100vh, 0);
+    background-color: #15151E;
+  }
+  60% {
+    transform: translate(-7px, 0);
+    background-color: #FA1E00;
+  }
+  90% {
+    background-color: #FA1E00;
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-7px, 0);
+    background-color: #15151E;
+    opacity: 0;
+  }
+}
